@@ -1,79 +1,80 @@
 {
-	"$schema": "https://json.schemastore.org/tsconfig.json",
-	"extends": "./tsconfig.test.json",
-	"compilerOptions": {
-		// Type Checking
-		"allowUnreachableCode": false,
-		"allowUnusedLabels": false,
-		"exactOptionalPropertyTypes": true,
-		"noFallthroughCasesInSwitch": true,
-		"noImplicitOverride": true,
-		"noImplicitReturns": true,
-		"noPropertyAccessFromIndexSignature": false,
-		"noUncheckedIndexedAccess": true,
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
-		"strict": true,
-
-		// Modules
-		"allowArbitraryExtensions": false,
-		"allowImportingTsExtensions": false,
-		"module": "ESNext",
-		"moduleResolution": "Bundler",
-		"resolveJsonModule": true,
-		"resolvePackageJsonExports": true,
-		"resolvePackageJsonImports": true,
-
-		// Emit
-		"declaration": true,
-		"declarationMap": true,
-		"importHelpers": false,
-		"newLine": "lf",
-		"noEmitHelpers": true,
-		"outDir": "dist",
-		"removeComments": false,
-		"sourceMap": true,
-
-		// Interop Constraints
-		"allowSyntheticDefaultImports": true,
-		"esModuleInterop": false,
-		"forceConsistentCasingInFileNames": true,
-		"isolatedModules": true,
-
-		// Language and Environment
-		"experimentalDecorators": true,
-		
-		"target": "ESNext",
-		"useDefineForClassFields": true,
-		"lib": ["ESNext", "DOM", "DOM.Iterable"],
-		"jsx": "preserve",
-		"baseUrl": ".",
-		
-		"noEmit": true,
-		
-		"allowJs": true,
-		"incremental": true,
-		"skipLibCheck": true,
-		"plugins": [
-			{
-				"name": "next"
-			}
-		],
-		"paths": {
-			"~/*": ["./src/*"]
-		}
-	},
-	"include": [
-		"src/**/*.ts",
-		"src/**/*.tsx",
-		"src/**/*.js",
-		"src/**/*.jsx",
-		"src/**/*.svg",
-		"src/**/*.cjs",
-		"src/**/*.png",
-		"src/**/*.mjs",
-		"next-env.d.ts",
-		".next/types/**/*.ts"
-	],
-	"exclude": ["node_modules"]
+  "$schema": "https://json.schemastore.org/tsconfig.json",
+  "extends": "./tsconfig.test.json",
+  "compilerOptions": {
+    // Type Checking
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": false,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    // Modules
+    "allowArbitraryExtensions": false,
+    "allowImportingTsExtensions": false,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "resolvePackageJsonExports": true,
+    "resolvePackageJsonImports": true,
+    // Emit
+    "declaration": true,
+    "declarationMap": true,
+    "importHelpers": false,
+    "newLine": "lf",
+    "noEmitHelpers": true,
+    "outDir": "dist",
+    "removeComments": false,
+    "sourceMap": true,
+    // Interop Constraints
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    // Language and Environment
+    "experimentalDecorators": true,
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "noEmit": true,
+    "allowJs": true,
+    "incremental": true,
+    "skipLibCheck": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "~/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "src/**/*.svg",
+    "src/**/*.cjs",
+    "src/**/*.png",
+    "src/**/*.mjs",
+    "next-env.d.ts",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
